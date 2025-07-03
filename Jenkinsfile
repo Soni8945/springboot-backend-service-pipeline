@@ -37,7 +37,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 script {
-                    sh "docker run -d --name spring-service --network host $IMAGE_NAME" // Runs the image and removes the container after
+                    sh "docker run -d -p 8090:8090 --name spring-service --network host $IMAGE_NAME" // Runs the image and removes the container after
                 }
             }
         }
