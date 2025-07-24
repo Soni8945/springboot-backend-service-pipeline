@@ -1,7 +1,5 @@
 package javaproject.springprj;
 
-import javaproject.springprj.employees;
-import javaproject.springprj.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
